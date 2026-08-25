@@ -15,8 +15,14 @@ Latest build: https://github.com/AltrixHub/strura-releases/releases/latest
 
 ## Opening an unsigned build on macOS
 
-Early builds are not code-signed or notarized, so macOS Gatekeeper blocks the first launch.
-Either right-click `Strura.app` and choose **Open**, then confirm — or clear the quarantine flag:
+Early builds are not code-signed or notarized, so macOS blocks the first launch
+with "Apple could not verify …". Close that dialog, then:
+
+1. Open **System Settings → Privacy & Security** and scroll down.
+2. Next to the notice that `Strura.app` was blocked, choose **Open Anyway** and confirm.
+
+After that one approval it opens normally. Alternatively, clear the quarantine
+flag from a terminal:
 
 ```
 xattr -d com.apple.quarantine /Applications/Strura.app
