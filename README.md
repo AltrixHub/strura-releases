@@ -11,6 +11,7 @@ Latest build: https://github.com/AltrixHub/strura-releases/releases/latest
 | Platform | File |
 |---|---|
 | macOS (Apple Silicon) | `Strura.dmg` |
+| Windows (x64) | `Strura-windows-x64.zip` |
 
 ## Opening an unsigned build on macOS
 
@@ -20,6 +21,11 @@ Either right-click `Strura.app` and choose **Open**, then confirm — or clear t
 ```
 xattr -d com.apple.quarantine /Applications/Strura.app
 ```
+
+## Opening an unsigned build on Windows
+
+Unzip the archive and run `Strura.exe`. The build is unsigned, so SmartScreen shows
+"Windows protected your PC" the first time — choose **More info**, then **Run anyway**.
 
 ## Feedback
 
